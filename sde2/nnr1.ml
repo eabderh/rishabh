@@ -1,8 +1,11 @@
 
+
+
 let rec theClass = function(a) ->
 	match a with
 	| x::[] -> x
-	| _::xs -> theClass xs;;
+	| _::xs -> theClass(xs)
+	| [] -> 0.;;
 
 
 let square x = x *. x;;
